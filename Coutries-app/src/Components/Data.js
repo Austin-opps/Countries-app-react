@@ -12,12 +12,12 @@ export default function Article({
     <>
       <Link to={`/${name.common}`}>
         <article className="name">
-          <img src={flags.svg} alt="" className="Flags" />
-          <div className="">
+          <img src={flags.svg} alt={`${name.common}`} className="image" />
+          <div className="countries">
             <h2 className="">
               {name.common}
             </h2>
-            <ul className="">
+            <ul className="country-details">
               <li>Population: {population.toLocaleString()}</li>
               <li>Region: {region}</li>
               <li>Subregion: {subregion}</li>

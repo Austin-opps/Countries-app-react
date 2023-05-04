@@ -1,15 +1,97 @@
-  
-.name{
-  background-color: aqua;
+.countries {
+  background-color: grey;
+  border-radius: 3px;
   display: grid;
+  grid-column: auto;
+  border: 100px;
+}
+
+
+
+
+.Search {
+  border-radius: 5px;
+  border-style: none;
+  margin: 30px;
+  width: 20cm;
+  text-align: left;
+  font-size: 18px;
+  font-style: oblique;
+  font-weight: 50;
+  background-color: wheat;
+}
+
+.filter {
+  border-style: none;
+  border-radius: 3px;
+  font-size: larger;
+  margin: 30px;
+  justify-content: end;
+  width: 5cm;
+  margin-top: 0px;
+}
+
+.country {
+  background-color: grey;
+  justify-content: space-between;
+  margin: 20px;
+  display: grid;
+  grid-column: auto;
+}
+
+.sec{
+  background-color: grey;
+}
+
+
+
+
+.key {
+  background-color: gray;
+  text-align: center;
 
 }
 
-body{
-  background-color: blueviolet;
- 
+.l {
+  text-align: center;
+  font-size: 40px;
 }
 
-.Search{
-  background-color: blue;  grid-column: 5;
+.borders {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.country-details {
+  background-color: grey;
+  text-align: left;
+  padding: 30px;
+  margin-top: 10px;
+  margin-right: 350px;
+  margin-left: 380px;
+  justify-content: space-around;
+
+
+}
+
+.back {
+  font-size: 25px;
+  margin-top: 30px;
+  text-align: end;
+  justify-content: start;
+
+}
+
+.flags {
+  max-width: 600px;
+  }
+
+.image {
+  max-width: 400px;
+}
+
+.countryName{
+  text-align: center;
 }

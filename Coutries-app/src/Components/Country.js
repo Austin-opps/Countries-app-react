@@ -27,15 +27,15 @@ export default function SingleCountry() {
     <>
       <section >
         {country.map((item) => (
-          <div key={item.population} className="">
+          <div key={item.population} className="key">
             <article>
-              <img src={item.flags.svg} alt={item.name.common} />
+              <img className="flags" src={item.flags.svg} alt={item.name.common} />
             </article>
 
             <article>
               <h1 className="l">{item.name.official}</h1>
 
-              <ul className="">
+              <ul className="country-details">
                 <li>Capital: {item.capital[0]}</li>
                 <li>Population: {item.population.toLocaleString()}</li>
                 <li>Region: {item.region}</li>
@@ -45,7 +45,7 @@ export default function SingleCountry() {
               {item.borders && (
                 <>
                   <h3 className="">Borders:</h3>
-                  <ul className="">
+                  <ul className="borders">
                     {item.borders.map((border, index) => (
                       <li key={index} className="">
                         {border}
@@ -55,7 +55,7 @@ export default function SingleCountry() {
                 </>
               )}
 
-              <Link to="/" className="">
+              <Link to="/" className="back">
                 &larr; Back
               </Link>
             </article>
