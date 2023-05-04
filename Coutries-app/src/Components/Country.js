@@ -19,17 +19,22 @@ export default function SingleCountry() {
     getSingleCountry();
   }, [name]);
 
+  //   This is for displaying the counrties name on the address bar
   useEffect(() => {
     document.title = `Countries | ${name}`;
   }, [name]);
 
   return (
     <>
-      <section >
+      <section>
         {country.map((item) => (
           <div key={item.population} className="key">
             <article>
-              <img className="flags" src={item.flags.svg} alt={item.name.common} />
+              <img
+                className="flags"
+                src={item.flags.svg}
+                alt={item.name.common}
+              />
             </article>
 
             <article>
@@ -56,7 +61,7 @@ export default function SingleCountry() {
               )}
 
               <Link to="/" className="back">
-                &larr; Back
+                &#8701; Back
               </Link>
             </article>
           </div>
