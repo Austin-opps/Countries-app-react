@@ -11,8 +11,8 @@ export default function Article({
   return (
     <>
       <Link to={`/${name.common}`}>
-        <article className="">
-          <img src={flags.svg} alt="" className="" />
+        <article className="name">
+          <img src={flags.svg} alt="" className="Flags" />
           <div className="">
             <h2 className="">
               {name.common}
