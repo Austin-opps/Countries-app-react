@@ -14,9 +14,7 @@ export default function Article({
         <article className="name">
           <img src={flags.svg} alt={`${name.common}`} className="image" />
           <div className="countries">
-            <h2 className="">
-              {name.common}
-            </h2>
+            <h2 className="countryName">{name.common}</h2>
             <ul className="country-details">
               <li>Population: {population.toLocaleString()}</li>
               <li>Region: {region}</li>

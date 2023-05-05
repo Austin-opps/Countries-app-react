@@ -2,9 +2,8 @@ import { useState, useEffect } from "react";
 import Article from "./Data";
 
 export default function Countries() {
-  const [countries, setCountries] = useState([]);
-
   //   Fetching of data from the API
+  const [countries, setCountries] = useState([]);
   useEffect(() => {
     const getCountries = async () => {
       try {
@@ -19,8 +18,9 @@ export default function Countries() {
     getCountries();
   }, []);
 
-  const [searchText, setSearchText] = useState("");
   //   Searching for a country
+  const [searchText, setSearchText] = useState("");
+
   async function searchCountry() {
     try {
       const res = await fetch(
@@ -37,7 +37,7 @@ export default function Countries() {
     searchCountry();
   }
 
-  //   Filtering the countries according to their region 
+  //   Filtering the countries according to their region
   const regions = [
     {
       name: "Europe",
@@ -58,6 +58,7 @@ export default function Countries() {
       name: "Antarctic",
     },
   ];
+
   async function filterByRegion(region) {
     try {
       const res = await fetch(
@@ -74,7 +75,6 @@ export default function Countries() {
     e.preventDefault();
     filterByRegion();
   }
- 
 
   return (
     <>

@@ -6,9 +6,6 @@
   border: 100px;
 }
 
-
-
-
 .Search {
   border-radius: 5px;
   border-style: none;
@@ -39,12 +36,9 @@
   grid-column: auto;
 }
 
-.sec{
+.sec {
   background-color: grey;
 }
-
-
-
 
 .key {
   background-color: gray;
@@ -86,12 +80,8 @@
 
 .flags {
   max-width: 600px;
-  }
+}
 
 .image {
   max-width: 400px;
-}
-
-.countryName{
-  text-align: center;
 }
